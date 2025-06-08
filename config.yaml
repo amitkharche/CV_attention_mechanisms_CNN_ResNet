@@ -1,0 +1,13 @@
+
+model:
+  type: resnet18
+  attention: SEBlock
+  num_classes: 10
+  pretrained: false
+
+training:
+  batch_size: 64
+  epochs: 20
+  learning_rate: 0.001
+  optimizer: Adam
+  loss_fn: CrossEntropyLoss
